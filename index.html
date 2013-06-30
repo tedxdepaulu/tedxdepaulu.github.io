@@ -1,74 +1,473 @@
+
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Tedxdepaulu.github.io : " />
+    <meta charset="utf-8">
+    <title>TEDxDePaulU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Independently organized TEDx event for DePaul University in Chicago." />
+    <meta name="keywords" content="Chicago, TED, TEDx, Conference, Chicago, DePaul, TEDxDePaul, tedxdepaulu, TEDxDePaulU, event, events, conferences, DePaul University, TEDx depaul, tedx depaul 2012, tedx depaul university, tedx depaul 2013, ted depaul, tedx depaul, creators and curator, teddepaulu,teds conference at depaul university, theater">    
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 
-    <title>Tedxdepaulu.github.io</title>
+    <meta property="og:type" content="website" />
+    <meta name="og:url" content="http://tedxdepaulu.com" />
+    <meta name="og:image" content="img/fb.jpg" />
+    <meta property="og:image:secure_url" content="img/fb.jpg" />
+    <meta name="og:site_name" content="Independently organized TEDx event for DePaul University in Chicago." />
+    <meta property="og:image:width" content="240" />
+    <meta property="og:image:height" content="240" />
+
+    <!-- dem icons -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://tedxdepaulu.com/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="http://tedxdepaulu.com/favicon.ico">
+
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed-57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-precomposed-72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-precomposed-114.png">
+
+
+
+
+    <!-- le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+
+      .marketing p + h2 {
+        margin-top: 28px;
+      }
+
+      .span12{
+        padding:20px;}
+
+      .sponsor {
+        color:#999;
+        font-size: 1.6em;
+        font-style: italic;
+      }
+
+      .footer-white {color: white;}
+
+      .fade {opacity: .5;}
+
+      .fade:hover {opacity:1;}
+
+      p.bio {
+          font-size: 1.5em;
+          line-height: 1.555em;
+          color: #d5d7dd;
+          text-align: left;
+      }
+
+      @media screen and (max-width: 767px) {
+  .show-on-mobile {
+    display: inherit !important;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  span, h1.top  {font-size: 21px !important; margin: 0px 0px 0px 0px !important; }
+
+    .section, .section2, .section3, .section4, .section5, .section6, .section7, .map, .pastevent {
+  padding: 0px !important;}
+
+.span12 {padding: 10px;}
+
+.heavy {font-weight: 800; text-align: center; font-size: 32px !important;}
+
+.center {font-size: 18px !important;}
+
+.jumbotron {margin: 30px 0;}
+
+}
+
+/* -- end resposive -- */
+  
+h1.top {
+  margin: 0px 0px 30px 0px;
+  color: #333333;
+  font-size: 70px;
+  vertical-align:middle;
+  font-weight: normal;
+  font-family: 'Playfair Display SC', serif;
+  top: -5px;
+  position: relative;
+  display: block;
+  text-align: center;
+  }
+
+  .center {text-align: center;
+    font-size: 21px;}
+
+  .dates{font-variant:small-caps;}
+
+  .scaleup{width: 100%;}
+
+
+  .section, .section2, .section3, .section4, .section5, .section6, .section7, .map, .pastevent {
+  background: #162126;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.section {background: #333a3e;}
+
+.section2 {background: #333333;}
+
+.section3 {background: #ECF0F1;}
+
+.altbio {color: #555555 !important;}
+
+.about {color: #FFFFFF !important;}
+
+.about a {color: #ff2b06 !important;}
+
+.section5 {background: #BDC3C7;}
+
+.section6 {background: #282828;}
+
+.section7 {background: #313131}
+
+.section4 {background: url(img/altbackground.jpg) no-repeat top center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;}
+
+  .center {text-align: center !important;}
+
+  .limit{ max-width: 200px;}
+
+  .magic:hover {opacity: .8;}
+
+  .map {background: url(img/sketch.jpg) no-repeat top center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  height: 200px;}
+
+  .pastevent {background: url(img/pastevent.jpg) no-repeat top center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  height: 320px;}
+
+  a.landing-btn {
+  color: white;
+  font-size: 18px;
+  background: #3498DB;
+  padding: 15px 30px;
+  margin: 40px 0px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.landing-btn:hover {background: #2980B9; text-decoration: none;}
+
+  a.pastevent-btn {
+  color: white;
+  font-size: 18px;
+  background: #2ECC71;
+  padding: 15px 30px;
+  margin: 40px 0px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.pastevent-btn:hover {background: #27AE60; text-decoration: none;}
+
+.heavy {font-weight: 800; text-align: center; font-size: 52px;}
+
+    </style>
+
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+   <link rel="shortcut icon" href="http://tedxdepaulu.com/2013/favicon.ico">
+
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/tedxdepaulu">View on GitHub</a>
-
-          <h1 id="project_title">Tedxdepaulu.github.io</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
     
+<div class="section4">
+    <div class="container-narrow">
+      <div class="row-fluid marketing">
+        <div class="span12">
+
+      <div class="jumbotron"><img src="img/TEDxDePaulU.png" alt="TEDxDePaulU"></div>
+           
+ <div class="media">
+    <div class="media-body">
+    <p class="bio">We bring together the best visionaries to share stories on how to initiate change, promote innovation, build businesses, and put ideas into action. <a class="smoothScroll" href="#about">Learn more about TED and TEDx &#8594;</a></a></p>
+  </div>
+</div> 
+
+</div></div></div></div>
+
+<div class="section2">
+  <div class="container-narrow">
+      <div class="row-fluid marketing">
+        <div class="span12">
+
+
+<div class="jumbotron"><img src="img/creators.png" alt="Creators and Curators"></div>
+
+ <div class="media">
+    <div class="media-body">
+    <p class="bio center">
+        <b>Dan McComas</b> 
+        <br><a href="http://youtu.be/phoUVH05kEg">It's All About the Giving</a>
+        <br>
+        <b>David Kadavy</b><br> <a href="http://youtu.be/24mAkq2S0PM">The New Literacy of Design</a>
+        <br>
+        <b>Scott Berkun</b><br> <a href="http://youtu.be/kixiXUPV6Uk">Saving Your Creative Soul</a>
+        <br>
+        <b>Betsy Hoover</b><br> <a href="http://youtu.be/yNdVx_s0SOs">The Power of Organizing</a>
+        <br>
+        
+        <b>Elaine Chernov</b><br> <a href="http://youtu.be/vZo356ZbYZM">Curating Consciously</a>
+        <br>
+        <b>Jon Satrom</b><br> <a href="http://youtu.be/OFwNtXpuMq4">Creative Problem Creating</a>
+        <br>
+        <b>George Aye</b><br> <a href="http://youtu.be/piDM1_TN41k">Creating a Public Design Team</a>
+        <br>
+        <b>Marcy Capron</b><br> <a href="http://youtu.be/piDM1_TN41k">Caretaker Leadership<span class="hide-on-mobile">: Badass Lemonade</span></a>
+        <br>
+        <b>Doug Zell</b><br> <a href="http://youtu.be/1QGB-TnXtzQ">Intelligentsia Coffee</a>
+        <br>
+        <b>Scott Schuman</b><br> <a href="http://youtu.be/6bSQqsioZ2c">The Sartorialist</a>
+      
+    </p>
+  </div>
+</div>
+
+</div></div></div></div>
+
+
+<div class="map">
+
+<div class="container-narrow">
+      <div class="row-fluid marketing center">
+        <div class="span12">
+
+
+  <br><br><br>
+  <a class="landing-btn" href="http://www.flickr.com/photos/agentfin/sets/72157633436139499/">View Sketchnotes</a>
+
+
+</div></div></div></div>
+
+<div class="section3">
+  <div class="container-narrow">
+      <div class="row-fluid marketing">
+        <div class="span12">
+
+<div class="jumbotron"><img src="img/city.png" alt="TEDxCity2.0"></div>
+
+ <div class="media">
+    <div class="media-body">
+    <p class="bio altbio">
+     
+    
+  In 2012 the TED Prize went not to an individual, but to an idea on which our planet's future depends: <a href="http://www.thecity2.org/">The City 2.0</a>.</p>
+
+<br>
+<p class="bio altbio center">
+<b>Lee Fisher</b><br> <a href="http://youtu.be/YP4ZA50A3mQ">Want to Change the World?<br>Start with Your City</a>
+<br>
+<b>Randall Blankenhorn</b><br> <a href="http://youtu.be/kshjm6Uxwfc">GO TO 2040</a>
+  </div>
+</div>
+
+</div></div></div></div>
+
+<div class="pastevent">
+
+<div class="container-narrow">
+      <div class="row-fluid marketing center">
+        <div class="span12">
+
+
+  <br><br><br><br><br><br><br><br>
+  <a class="pastevent-btn" href="http://www.flickr.com/photos/80271045@N05">View Past Event Photos</a>
+
+
+</div></div></div></div>
+
+
+<div class="section5">
+  <div class="container-narrow">
+      <div class="row-fluid marketing">
+        <div class="span12">
+
+<h1 class="heavy">What Can We Do?</h1>
+
+ <div class="media">
+    <div class="media-body">
+    <p class="bio altbio">
+
+    For the first time in DePaul University's history, we brought together some of the brightest minds to exlpore our theme: <a href="http://www.ted.com/tedx/events/3600">"What can we do?"</a><br></p>
+
+    <p class="bio altbio center">
+
+        <br><b>Miriam Zoila Perez</b> <br><a href="http://youtu.be/YCsIhuR5fqU">Transforming Empathy</a>
+
+        <br><b>Orion Haas</b> <br><a href="http://youtu.be/Cujgzj3lFks">We Can Be Effective Volunteers Abroad</a>
+
+        <br><b>Daniel Wordsworth</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Daniel-Wordsworth-O">On Being Human</a>
+
+        <br><b>Eric Mata</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Eric-Mata-Against-M">Against Me(n)</a>
+
+        <br><b>Jim Sweitzer</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Jim-Sweitzer-A-Ray">A Ray of Hope</a>
+
+        <br><b>Libby Hurley</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Libby-Hurley-Wade-I">Wade Into The Water</a>
+
+         <br><b>Katie Redford</b> <br><a href="http://youtu.be/yILMYWUT2pg">What Makes Us Human</a>
+
+        <br><b>Shital Chauhan</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Shital-Chauhan-Who">Who Needs To Be An Expert?</a>
+
+        </p>
+
+      </div>
+      </div>
+     
+    
+ 
+
+</div></div></div></div>
+
+<div class="section6">
+  <div class="container-narrow">
+      <div class="row-fluid marketing">
+        <div class="span12">
+
+
+
+
+      <div class="media">
+    <div class="media-body" id="about">
+    <p class="bio about pullleft">
+    <br><br>
+    <b>About <a href="http://www.ted.com/tedx">TEDx</a>
+    <br>
+    <a href="https://www.ted.com/tedx">x</a> = independently organized event</b>
+    <br>
+    <br>
+In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
+<br><br>
+
+<b>About <a href="http://www.ted.com">TED</a></b>
+    <br>
+    <br>
+TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 26 years ago, TED has grown to support those world-changing ideas with multiple initiatives. At TED, the world's leading thinkers and doers are asked to give the talk of their lives in 18 minutes. Talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Benoit Mandelbrot, Philippe Starck, Ngozi Okonjo-Iweala, Isabel Allende and former UK Prime Minister Gordon Brown. Two major TED events are held each year: The TED Conference takes place every spring in Long Beach, California (along with a parallel conference, TEDActive, in Palm Springs), and TEDGlobal is held each summer in Edinburgh, Scotland.
+
+ <br>
+    <br>
+
+TED's media initiatives include TED.com, where new TEDTalks are posted daily; the new TED Conversations, enabling broad conversations among TED fans; and the Open Translation Project, which provides subtitles and interactive transcripts as well as the ability for any TEDTalk to be translated by volunteers worldwide.
+
+<br><br>
+
+TED has established the annual TED Prize, where exceptional individuals with a wish to change the world are given the opportunity to put their wishes into action; TEDx, which offers individuals or groups a way to host local, self-organized events around the world; and the TED Fellows program, helping world-changing innovators from around the globe to become part of the TED community and, with its help, amplify the impact of their remarkable projects and activities.
+
+<br><br>
+
+For information about TED's upcoming conferences, visit <a href="http://www.ted.com/registration">ted.com/registration</a> 
+        
+    </p>
+  </div>
+</div>
+
+</div></div></div></div>
+
+<div class="section7">
+  <div class="container-narrow">
+      <div class="row-fluid marketing">
+        <div class="span12">
+
+
+
+ <div class="media">
+    <div class="media-body">
+    <p class="bio center">
+        <a href="https://twitter.com/mtthlbg"><img class="img-circle magic" src="img/matt_stock.png"></a>
+        <a href="https://twitter.com/DapperDrDaniel"><img class="img-circle magic" src="img/dan_stock.jpg"></a>
+        <br><br>
+        Follow <a href="https://twitter.com/tedxdepaulu">@tedxdepaulu</a> or email us at <a href="mailto:tedxdepaul@gmail.com?subject=ideas worth spreading">tedxdepaul@gmail.com</a>
+    </p>
+  </div>
+</div>
+
+</div></div></div></div>
+
+
+      </div>
+      </div>
+
+    </div> <!-- /container -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32634861-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
   </body>
 </html>
