@@ -1,25 +1,18 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>TEDxDePaulU</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Independently organized TEDx event for DePaul University in Chicago." />
     <meta name="keywords" content="Chicago, TED, TEDx, Conference, Chicago, DePaul, TEDxDePaul, tedxdepaulu, TEDxDePaulU, event, events, conferences, DePaul University, TEDx depaul, tedx depaul 2012, tedx depaul university, tedx depaul 2013, ted depaul, tedx depaul, creators and curator, teddepaulu,teds conference at depaul university, theater">    
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 
-    <meta property="og:type" content="website" />
-    <meta name="og:url" content="http://tedxdepaulu.com" />
-    <meta name="og:image" content="img/fb.jpg" />
-    <meta property="og:image:secure_url" content="img/fb.jpg" />
-    <meta name="og:site_name" content="Independently organized TEDx event for DePaul University in Chicago." />
-    <meta property="og:image:width" content="240" />
-    <meta property="og:image:height" content="240" />
+    <meta property="og:title" content="TEDxDePaulU | Independently organized TEDx event for DePaul University in Chicago.">
+    <meta property="og:site_name" content="TEDxDePaulU">
+    <meta property="og:url" content="http://tedxdepaulu.com">
+    <meta property="og:image" content="http://tedxdepaulu.com/apple-touch-icon-precomposed-114.png">
 
     <!-- dem icons -->
     <link rel="shortcut icon" href="/favicon.ico">
@@ -28,9 +21,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="http://tedxdepaulu.com/favicon.ico">
     <link rel="shortcut icon" type="image/ico" href="http://tedxdepaulu.com/favicon.ico">
 
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed-57.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-precomposed-72.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-precomposed-114.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-precomposed-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-precomposed-114.png">
 
 
 
@@ -112,11 +105,18 @@
 
 .span12 {padding: 10px;}
 
+.section4 {
+  height: auto !important;}
+
+.lander {margin: auto !important;}
+
 .heavy {font-weight: 800; text-align: center; font-size: 32px !important;}
 
 .center {font-size: 18px !important;}
 
 .jumbotron {margin: 30px 0;}
+
+.section7 {font-size: 16px !important;}
 
 }
 
@@ -147,7 +147,7 @@ h1.top {
   background: #162126;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 0px;
 }
 
 .section {background: #333a3e;}
@@ -166,13 +166,25 @@ h1.top {
 
 .section6 {background: #282828;}
 
-.section7 {background: #313131}
+.section7 {background: #313131; color: #555 !important; }
+
+.section7 a {color: #999 !important;}
+
 
 .section4 {background: url(img/altbackground.jpg) no-repeat top center;
+  height: 720px;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;}
+
+  .section8 {background: #313131;background: url(img/contactus.jpg) no-repeat center center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+ height: 200px;}
+
 
   .center {text-align: center !important;}
 
@@ -212,7 +224,6 @@ h1.top {
   font-size: 18px;
   background: #2ECC71;
   padding: 15px 30px;
-  margin: 40px 0px;
   border: none;
   border-radius: 6px;
   text-decoration: none;
@@ -220,7 +231,22 @@ h1.top {
 
 .pastevent-btn:hover {background: #27AE60; text-decoration: none;}
 
+  a.email-btn {
+  color: #2a2a2a;
+  font-size: 18px;
+  background: #e6e6e6;
+  padding: 15px 30px;
+  margin: 40px 0px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.email-btn:hover {background: #fff; text-decoration: none;}
+
 .heavy {font-weight: 800; text-align: center; font-size: 52px;}
+
+.lander {margin: 200px auto 50px auto;}
 
     </style>
 
@@ -231,8 +257,6 @@ h1.top {
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-   <link rel="shortcut icon" href="http://tedxdepaulu.com/2013/favicon.ico">
-
   </head>
 
   <body>
@@ -241,13 +265,15 @@ h1.top {
 <div class="section4">
     <div class="container-narrow">
       <div class="row-fluid marketing">
-        <div class="span12">
+        <div class="span12 lander">
 
       <div class="jumbotron"><img src="img/TEDxDePaulU.png" alt="TEDxDePaulU"></div>
            
  <div class="media">
     <div class="media-body">
-    <p class="bio">We bring together the best visionaries to share stories on how to initiate change, promote innovation, build businesses, and put ideas into action. <a class="smoothScroll" href="#about">Learn more about TED and TEDx &#8594;</a></a></p>
+    <p class="bio">We bring together the best visionaries to share stories on how to initiate change, promote innovation, build businesses, and put ideas into action.
+
+    <a class="smoothScroll" href="#about">Learn more about TED and TEDx &#8594;</a></p>
   </div>
 </div> 
 
@@ -267,7 +293,7 @@ h1.top {
         <b>Dan McComas</b> 
         <br><a href="http://youtu.be/phoUVH05kEg">It's All About the Giving</a>
         <br>
-        <b>David Kadavy</b><br> <a href="http://youtu.be/24mAkq2S0PM">The New Literacy of Design</a>
+        <b>David Kadavy</b><br> <a href="http://youtu.be/dvD4bQpg5-A">The New Literacy of Design</a>
         <br>
         <b>Scott Berkun</b><br> <a href="http://youtu.be/kixiXUPV6Uk">Saving Your Creative Soul</a>
         <br>
@@ -278,7 +304,7 @@ h1.top {
         <br>
         <b>Jon Satrom</b><br> <a href="http://youtu.be/OFwNtXpuMq4">Creative Problem Creating</a>
         <br>
-        <b>George Aye</b><br> <a href="http://youtu.be/piDM1_TN41k">Creating a Public Design Team</a>
+        <b>George Aye</b><br> <a href="http://youtu.be/lDVWc6XvKEI">Creating a Public Design Team</a>
         <br>
         <b>Marcy Capron</b><br> <a href="http://youtu.be/piDM1_TN41k">Caretaker Leadership<span class="hide-on-mobile">: Badass Lemonade</span></a>
         <br>
@@ -301,7 +327,7 @@ h1.top {
 
 
   <br><br><br>
-  <a class="landing-btn" href="http://www.flickr.com/photos/agentfin/sets/72157633436139499/">View Sketchnotes</a>
+  <a class="landing-btn" href="http://www.flickr.com/photos/agentfin/sets/72157633436139499/" target="_blank">View Sketchnotes</a>
 
 
 </div></div></div></div>
@@ -338,7 +364,7 @@ h1.top {
 
 
   <br><br><br><br><br><br><br><br>
-  <a class="pastevent-btn" href="http://www.flickr.com/photos/80271045@N05">View Past Event Photos</a>
+  <a class="pastevent-btn" href="http://www.flickr.com/photos/80271045@N05" target="_blank">Past Event Photos</a>
 
 
 </div></div></div></div>
@@ -355,7 +381,7 @@ h1.top {
     <div class="media-body">
     <p class="bio altbio">
 
-    For the first time in DePaul University's history, we brought together some of the brightest minds to exlpore our theme: <a href="http://www.ted.com/tedx/events/3600">"What can we do?"</a><br></p>
+    For the first time in DePaul University's history, we brought together some of the brightest minds to explore our theme: <a href="http://www.ted.com/tedx/events/3600">"What can we do?"</a><br></p>
 
     <p class="bio altbio center">
 
@@ -363,17 +389,17 @@ h1.top {
 
         <br><b>Orion Haas</b> <br><a href="http://youtu.be/Cujgzj3lFks">We Can Be Effective Volunteers Abroad</a>
 
-        <br><b>Daniel Wordsworth</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Daniel-Wordsworth-O">On Being Human</a>
+        <br><b>Daniel Wordsworth</b> <br><a href="http://youtu.be/wzKNNv0OOrE">On Being Human</a>
 
-        <br><b>Eric Mata</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Eric-Mata-Against-M">Against Me(n)</a>
+        <br><b>Eric Mata</b> <br><a href="http://youtu.be/dNqb5JsE3FA">Against Me(n)</a>
 
-        <br><b>Jim Sweitzer</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Jim-Sweitzer-A-Ray">A Ray of Hope</a>
+        <br><b>Jim Sweitzer</b> <br><a href="http://youtu.be/Cu-2nsJo-9k">A Ray of Hope</a>
 
-        <br><b>Libby Hurley</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Libby-Hurley-Wade-I">Wade Into The Water</a>
+        <br><b>Libby Hurley</b> <br><a href="http://youtu.be/jUh4W_pj5l8">Wade Into The Water</a>
 
          <br><b>Katie Redford</b> <br><a href="http://youtu.be/yILMYWUT2pg">What Makes Us Human</a>
 
-        <br><b>Shital Chauhan</b> <br><a href="http://tedxtalks.ted.com/video/TEDxDePaulU-Shital-Chauhan-Who">Who Needs To Be An Expert?</a>
+        <br><b>Shital Chauhan</b> <br><a href="http://youtu.be/evmmkta1Tg0">Who Needs To Be An Expert?</a>
 
         </p>
 
@@ -384,6 +410,21 @@ h1.top {
  
 
 </div></div></div></div>
+
+<div class="section8">
+
+<div class="container-narrow fifty">
+      <div class="row-fluid marketing center">
+        <div class="span12">
+
+
+ <br><br><br>
+  <a class="email-btn" href="http://eepurl.com/kQytH" target="_blank">Subscribe</a>
+
+
+</div></div></div></div>
+
+
 
 <div class="section6">
   <div class="container-narrow">
@@ -396,7 +437,7 @@ h1.top {
       <div class="media">
     <div class="media-body" id="about">
     <p class="bio about pullleft">
-    <br><br>
+    <br>
     <b>About <a href="http://www.ted.com/tedx">TEDx</a>
     <br>
     <a href="https://www.ted.com/tedx">x</a> = independently organized event</b>
@@ -410,8 +451,7 @@ In the spirit of ideas worth spreading, TEDx is a program of local, self-organiz
     <br>
 TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 26 years ago, TED has grown to support those world-changing ideas with multiple initiatives. At TED, the world's leading thinkers and doers are asked to give the talk of their lives in 18 minutes. Talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Benoit Mandelbrot, Philippe Starck, Ngozi Okonjo-Iweala, Isabel Allende and former UK Prime Minister Gordon Brown. Two major TED events are held each year: The TED Conference takes place every spring in Long Beach, California (along with a parallel conference, TEDActive, in Palm Springs), and TEDGlobal is held each summer in Edinburgh, Scotland.
 
- <br>
-    <br>
+ <br><br>
 
 TED's media initiatives include TED.com, where new TEDTalks are posted daily; the new TED Conversations, enabling broad conversations among TED fans; and the Open Translation Project, which provides subtitles and interactive transcripts as well as the ability for any TEDTalk to be translated by volunteers worldwide.
 
@@ -438,10 +478,9 @@ For information about TED's upcoming conferences, visit <a href="http://www.ted.
 
  <div class="media">
     <div class="media-body">
-    <p class="bio center">
-        <a href="https://twitter.com/mtthlbg"><img class="img-circle magic" src="img/matt_stock.png"></a>
-        <a href="https://twitter.com/DapperDrDaniel"><img class="img-circle magic" src="img/dan_stock.jpg"></a>
-        <br><br>
+    <p class="bio center section7">
+        Made by <a href="https://twitter.com/mtthlbg">Matt Helbig</a> and <a href="https://twitter.com/DapperDrDaniel">Daniel Gurevich</a>
+        <br>
         Follow <a href="https://twitter.com/tedxdepaulu">@tedxdepaulu</a> or email us at <a href="mailto:tedxdepaul@gmail.com?subject=ideas worth spreading">tedxdepaul@gmail.com</a>
     </p>
   </div>
@@ -454,6 +493,11 @@ For information about TED's upcoming conferences, visit <a href="http://www.ted.
       </div>
 
     </div> <!-- /container -->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+
+    <!-- dat javascript -->
 
 <script type="text/javascript">
 
