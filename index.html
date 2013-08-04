@@ -100,7 +100,7 @@
 
   span, h1.top  {font-size: 21px !important; margin: 0px 0px 0px 0px !important; }
 
-    .section, .section2, .section3, .section4, .section5, .section6, .section7, .map, .pastevent {
+    .section, .section2, .section3, .section4, .section5, .section6, .section7, .map, .pastevent, .black {
   padding: 0px !important;}
 
 .span12 {padding: 10px;}
@@ -147,7 +147,7 @@ h1.top {
   .scaleup{width: 100%;}
 
 
-  .section, .section2, .section3, .section4, .section5, .section6, .section7, .map, .pastevent {
+  .section, .section2, .section3, .section4, .section5, .section6, .section7, .map, .pastevent, .black {
   background: #162126;
   width: 100%;
   height: 100%;
@@ -186,9 +186,7 @@ h1.top {
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  -o-background-size: cover;
- height: 305px;}
-
+  -o-background-size: cover;}
 
   .center {text-align: center !important;}
 
@@ -213,27 +211,41 @@ h1.top {
   a.landing-btn {
   color: white;
   font-size: 18px;
-  background: #3498DB;
+  background-color: #3498DB;
   padding: 15px 30px;
   margin: 40px 0px;
   border: none;
   border-radius: 6px;
   text-decoration: none;
+  -webkit-box-shadow: 0 4px 0 0 #2980B9;
+-moz-box-shadow: 0 4px 0 0 #2980B9;
+box-shadow: 0 4px 0 0 #2980B9;
+-webkit-transition: background-color 0.15s ease-in-out;
+-moz-transition: background-color 0.15s ease-in-out;
+-o-transition: background-color 0.15s ease-in-out;
+transition: background-color 0.15s ease-in-out;
 }
 
-.landing-btn:hover {background: #2980B9; text-decoration: none;}
+.landing-btn:hover {background-color: #5DADE2;}
 
   a.pastevent-btn {
   color: white;
   font-size: 18px;
-  background: #2ECC71;
+  background-color: #e74c3c;
   padding: 15px 30px;
   border: none;
   border-radius: 6px;
   text-decoration: none;
+  -webkit-box-shadow: 0 4px 0 0 #c0392b;
+-moz-box-shadow: 0 4px 0 0 #c0392b;
+box-shadow: 0 4px 0 0 #c0392b;
+-webkit-transition: background-color 0.15s ease-in-out;
+-moz-transition: background-color 0.15s ease-in-out;
+-o-transition: background-color 0.15s ease-in-out;
+transition: background-color 0.15s ease-in-out;
 }
 
-.pastevent-btn:hover {background: #27AE60; text-decoration: none;}
+.pastevent-btn:hover {background-color: #ec7063;}
 
   a.email-btn {
   color: #e6e6e6;
@@ -398,10 +410,6 @@ h1.top {
 
         <p class="bio about center">"The human mind once stretched by a new idea never goes back to its original dimensions." <br>– Oliver Wendell Holmes</p>
 
-<br><br>
-  <a class="email-btn" href="http://eepurl.com/kQytH" target="_blank">Get Email Updates</a>
-
-
 </div></div></div></div>
 
 
@@ -507,6 +515,8 @@ For information about TED's upcoming conferences, visit <a href="http://www.ted.
 
 </div></div></div></div>
 
+
+
 <div class="section7">
   <div class="container-narrow">
       <div class="row-fluid marketing">
@@ -522,6 +532,7 @@ For information about TED's upcoming conferences, visit <a href="http://www.ted.
         Follow <a href="https://twitter.com/tedxdepaulu">@tedxdepaulu</a> or email us at <a href="mailto:tedxdepaul@gmail.com?subject=ideas worth spreading">tedxdepaul@gmail.com</a>
         <br>
         <p class="center github"><a href="https://twitter.com/tedxdepaulu">&#62217;</a> <a href="https://facebook.com/TEDxDePaulU">&#62220;</a> <a href="https://github.com/tedxdepaulu">&#62208;</a> </p>
+
     </p>
   </div>
 </div>
@@ -551,6 +562,12 @@ For information about TED's upcoming conferences, visit <a href="http://www.ted.
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+
+<script>_threebar_id = 1516440525;
+var tb = document.createElement('script'); tb.type = 'text/javascript';
+tb.async = true; tb.src = 'https://www.threebar.net/public/lib/bar.min.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tb, s);
 </script>
 
   </body>
